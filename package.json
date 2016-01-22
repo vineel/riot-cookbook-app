@@ -1,0 +1,20 @@
+{
+  "name": "riot_starter_1",
+  "version": "1.0.0",
+  "description": "Simple Riot App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vineel Shah <vshah@glgroup.com> (http://vineel.com/)",
+  "license": "ISC",
+  "dependencies": {
+    "browserify": "13.0.0",
+    "gulp": "3.9.0",
+    "gulp-watch": "4.3.5",
+    "riot": "2.3.13",
+    "riotjs": "1.0.4",
+    "riotify": "0.1.2",
+    "vinyl-source-stream": "1.1.0"
+  }
+}
