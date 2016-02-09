@@ -10,9 +10,13 @@
   "author": "Vineel Shah <vshah@glgroup.com> (http://vineel.com/)",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "1.14.2",
     "browserify": "13.0.0",
+    "express": "4.13.4",
     "gulp": "3.9.0",
     "gulp-watch": "4.3.5",
+    "marmottajax": "2.0.2",
+    "prismjs": "1.3.0",
     "riot": "2.3.13",
     "riotify": "0.1.2",
     "riotjs": "1.0.4",

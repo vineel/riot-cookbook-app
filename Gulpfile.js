@@ -20,6 +20,8 @@ gulp.task('watch', ['browserify'], function() {
   gulp.watch('index.html', ['browserify']);
   gulp.watch('*.js', ['browserify']);
   gulp.watch('tags/*', ['browserify']);
+  gulp.watch('support-tags/*', ['browserify']);
+  gulp.watch('pages/*', ['browserify']);
 });
 
 gulp.task('default', ['browserify']);
