@@ -2,7 +2,7 @@
 	<div>
 	<div style="width:100%">
 	<h1>Filename: { opts.filename }</h1>
-	<pre><code name="display" id="display" class="language-markup"></code></pre>
+	<pre><code name="display" id="display" class={ language-markup: lang==="markup", language-javascript: lang==="js" } ></code></pre>
 	</div>
 	</div>
 
@@ -10,10 +10,9 @@
 		var thisTag = this;
 		var majax = require('marmottajax');
 		var range = null;
-		
+		thisTag.lang = "markup" || opts.lang;
 
 		thisTag.on('mount', function(text) {
-			console.log("check 2");
 			majax({
 				url: thisTag.opts.filename,
 				method: 'get'
@@ -26,7 +25,7 @@
 				thisTag.text = text;
 				thisTag.display.innerText = text;
 				var el = document.getElementById('display');
-		        Prism.highlightElement(el);
+		        Prism.highlightElement(thisTag.display);
 				thisTag.update(this);
 			})
 		});

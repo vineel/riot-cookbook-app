@@ -12,6 +12,9 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use('/tags',express.static('tags'));
 app.use(bodyParser.urlencoded({ extended: true }));
 
+app.use('/pages',express.static('pages'));
+app.use(bodyParser.urlencoded({ extended: true }));
+
 
 var server = app.listen(port, function() {
   var host = server.address().address;

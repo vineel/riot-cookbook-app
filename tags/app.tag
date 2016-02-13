@@ -30,15 +30,23 @@
 
 			// capture any URL that lookslike /pages/sometag and set tagName to sometag
 			riot.route('/pages/*', function(tagName) {
-				// create instance of tag "tagName" and insert it into the "content" div
+				// create instance of tag and insert it into the "content" div
 				riot.mount(thisTag.content, tagName, null);
 
 				// tell the menu tag to set the selection correctly
 				thisTag.tags.menu.selectByTag(tagName);
 			});
 
+			riot.route('/source..', function() {
+				var fname = riot.route.query().filename;
+				riot.mount(thisTag.content, 'code-display', { filename: fname });
+				
+			});
 		});
 
+		viewSource(event) {
+			riot.mount(thisTag.content, 'code-display', {filename: 'pages/boilerplate-page.tag'});
+		}
 	</script>
 	<style>
 		/* Global Style */
@@ -50,11 +58,15 @@
 		p {
 			margin-bottom:20px;
 		}
+
+		a, a:visited, a:hover {
+			color: #00A;
+			cursor: pointer;
+		}
+
+
 	</style>
 	<style scoped>
-	a, a:visited, a:hover {
-		cursor: pointer;
-	}
 	div {
 		padding:0;
 		margin:0;

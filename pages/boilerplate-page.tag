@@ -14,7 +14,7 @@
 		<p>
 		Here are a few things to notice about this tag:
 		<ol>
-			<li>The name of this tag is <b>boilerplate</b>. When creating a new tag, you could copy/paste this into a new file. For example, change the name to my-tag and name the file "my-tag.tag".</li>
+			<li>The name of this tag is <b>boilerplate</b>. When creating a new tag, you could copy/paste this into a new file. For example, change <b>&lt;boilerplate&gt;&lt;/boilerplate&gt;</b> to <b>&lt;my-tag&gt;&lt;/my-tag&gt;</b> and save the file to <b>"tags/my-tag.tag"</b>. Remember to add it to the file <b>browserify_entrypoint.js</b> so it gets bundled into the app.</li>
 			
 			<li>The root HTML element of this tag is the <b>&lt;div&gt;</b>. This can be any HTML tag that you like. In a script-only tag, you can leave it out altogether.</li>
 

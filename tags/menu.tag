@@ -1,10 +1,13 @@
 <menu>
 <div>
 <p each={choice,index in choices} class={ selected: choice[2] } onclick={ clickChoice }><a onclick={ clickChoice }>{ choice[0] }</a></p>
+<br/>
+<a href="/#/source?filename=/pages/{ chosenTagName }.tag" target="source_view">View Source of { chosenTagName }</a>
 </div>
 
 	<script>
 		var thisTag = this;
+		thisTag.chosenTagName = "";
 
 		clickChoice(e) {
 			thisTag.deselectAll();
@@ -23,18 +26,19 @@
 			["A Simple Tag", "simple-page", false],
 			["A Boilerplate Tag", "boilerplate-page", false],
 			["Routing", "routing-page", false],
-			["Dynamic HTML", "dynamic-page",false],
-			["Interactivity", "interactive-page", false],
-			["Ajax", "ajax-page", false],
+			["Rendering Tables", "rendering-tables-page",false],
+			["Ajax Table", "ajax-page", false],
+			["Clicking", "interactive-page", false],
+			["Dynamic CSS", "interactive-page", false],
+			["ummm...", "interactive-page", false],
 			["Message Passing", "message-page", false],
-			["Shared JS Libraries", "library-page", false],
-			["NPM modules", "npm-page", false],
 			["Building This App", "building-page", false]
 		];
 
 		thisTag.selectByIndex = function(index) {
 			thisTag.deselectAll();
 			thisTag.choices[index][2] = true;
+			thisTag.chosenTagName = thisTag.choices[index][1];
 			thisTag.update();
 		}
 

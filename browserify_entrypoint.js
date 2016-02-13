@@ -19,6 +19,8 @@ require('./pages/simple-page.tag');
 require('./pages/boilerplate-page.tag');
 require('./pages/routing-page.tag');
 require('./pages/raw-page.tag');
+require('./pages/rendering-tables-page.tag');
+require('./pages/ajax-page.tag');
 require('./pages/interactive-page.tag');
 
 // These are example tags. View each file for more information.
@@ -27,8 +29,8 @@ require('./tags/boilerplate.tag');
 require('./tags/raw.tag');
 
 // these are support tags, built specifically for this app
-require('./support-tags/menu.tag');
-require('./support-tags/code-display.tag');
-require('./support-tags/code-embed.tag');
+require('./tags/menu.tag');
+require('./tags/code-display.tag');
+require('./tags/code-embed.tag');
 
-riot.mount('app');
+riot.mount('*');

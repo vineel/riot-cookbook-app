@@ -1,0 +1,26 @@
+[
+    {
+        "FIRST":"Abigal",
+        "LAST" : "Andrews",
+        "PHONE" : "212-555-1234",
+        "CITY":"New York City",
+        "STATE": "NY",
+        "ZIP": "10003"
+    },
+    {
+        "FIRST":"Benjamin",
+        "LAST" : "Button",
+        "PHONE" : "862-555-3452",
+        "CITY":"South Orange",
+        "STATE": "NJ",
+        "ZIP": "07079"
+    },
+    {
+        "FIRST":"Cicily",
+        "LAST" : "Cooper",
+        "PHONE" : "617-555-5321",
+        "CITY":"Boston",
+        "STATE": "MA",
+        "ZIP": "02112"
+    }
+]
