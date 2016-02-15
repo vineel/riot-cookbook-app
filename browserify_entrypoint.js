@@ -25,6 +25,7 @@ require('./pages/ajax-page.tag');
 require('./pages/interactive-page.tag');
 require('./pages/click-page.tag');
 require('./pages/building-page.tag');
+require('./pages/getdom-page.tag');
 
 // These are example tags. View each file for more information.
 require('./tags/simple.tag');

@@ -1,0 +1,7 @@
+To Do
+
+1. finish "Between Tags"
+2. move all code-display examples to examples directory
+3. change serving to something more simple, jettison node.js
+4. update build and run page once that's done
+5. figure out how to serve from S3 -- or... vineel.com?

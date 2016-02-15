@@ -12,9 +12,8 @@
 		<ol>
 		<li>The name of the tag is <b>simple</b>.</li>
 		<li>You can embed this tag in another tag like this:
-		<code-embed content="<simple></simple>"></code-embed>
+		<code-display filename="/examples/simple-ex1.html" lang='html'></code-embed>
 		<li>There is no javascript or CSS in this tag. It is legal to have a markup-only or script-only tag.
-		<li>The root element of this tag is <code-embed content="<p>"></code-embed>
 		<li>Typically, this tag would be saved in a file called <b>simple.tag</b>.</li>
 		</ol>
 	</p>

@@ -31,9 +31,8 @@
 			["Tables", "rendering-tables-page",false],
 			["Ajax Table", "ajax-page", false],
 			["Clicking", "click-page", false],
-			["Dynamic CSS", "interactive-page", false],
-			["Forms", "forms-page", false],
-			["Message Passing", "message-page", false],
+			["Accessing DOM", "getdom-page", false],
+			["Between Tags", "message-page", false],
 			["Building This App", "building-page", false]
 		];
 

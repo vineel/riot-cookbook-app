@@ -1,5 +1,5 @@
 <app>
-	<h1>A Riot Example App</h1>
+	<h1>A Riot Cookbook App</h1>
 	<div class="flexbox-container">
 		<div class="left">
 			<menu></menu>
@@ -24,8 +24,7 @@
 		thisTag.on('mount', function() {
 			// tell index URL to redirect to the overview page URL
 			riot.route('/', function() {
-				riot.mount(thisTag.content, 'overview-page', {});
-				thisTag.tags.menu.selectByTag('overview-page');
+				riot.route('/pages/overview-page');
 			});
 
 			// capture any URL that lookslike /pages/sometag and set tagName to sometag
