@@ -2,7 +2,9 @@
 <div>
 <p each={choice,index in choices} class={ selected: choice[2] } onclick={ clickChoice }><a onclick={ clickChoice }>{ choice[0] }</a></p>
 <br/>
-<a href="/#/source?filename=/pages/{ chosenTagName }.tag" target="source_view">View Source of { chosenTagName }</a>
+
+<a href="http://github.com/vineel/riot-cookbook-app/blob/master/pages/{ chosenTagName }.tag" target="source_view">View Source</a>
+
 </div>
 
 	<script>

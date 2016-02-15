@@ -1,6 +1,6 @@
 <code-display>
 	<div class='header' if={ opts.hdr!=undefined }>Filename: { opts.filename }</div>
-	<pre class={more_margin: (opts.hdr===undefined) }><code name="display" id="display" class={ language-javascript: lang==='js', language-html: lang==='html' }></code></pre>
+	<pre class={more_margin: (opts.hdr===undefined) }><code name="display" id="display" class="language-{ lang }"></code></pre>
 
 	<script>
 		var thisTag = this;
@@ -24,7 +24,6 @@
 				}
 				thisTag.text = text;
 				thisTag.display.innerText = text;
-				// thisTag.display.innerHTML = text;
 				hljs.highlightBlock(thisTag.display);
 				thisTag.update(this);
 			})
@@ -49,6 +48,7 @@
 	}
 	#display {
 		background-color: #f5f2f0;
+		padding-left:20px;
 	}
 	.more_margin {
 		margin-top: 10px 0 20px 0;
