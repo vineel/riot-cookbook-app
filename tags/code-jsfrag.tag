@@ -1,16 +1,17 @@
-<code-embed>
-	<pre id="display"><code class="language-{ opts.lang }">{ opts.content }</code></pre>
+<code-jsfrag>
+	<textarea><yield/></textarea>
 	<script>
 		var thisTag = this;
 		var hljs = require('highlight.js');
 
 		this.on('mount', function() {
-			hljs.highlightBlock(thisTag.display);
+			// console.log("txt", thisTag.txt.innerText);
+			// hljs.highlightBlock(thisTag.display);
 		});
 	</script>
 	<style scoped>
 	pre#display {
-		margin:20px 0;
+		margin:0;
 		padding:0;
 		overflow: hidden;
 		background-color: #f5f2f0; 
@@ -20,4 +21,4 @@
 		overflow: hidden;
 	}
 	</style>
-</code-embed>
+</code-jsfrag>

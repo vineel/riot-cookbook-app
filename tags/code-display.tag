@@ -1,16 +1,16 @@
 <code-display>
-	<div>
-	<div style="width:100%">
-	<h1>Filename: { opts.filename }</h1>
-	<pre><code name="display" id="display" class={ language-markup: lang==="markup", language-javascript: lang==="js" } ></code></pre>
-	</div>
-	</div>
+	<div class='header' if={ opts.hdr!=undefined }>Filename: { opts.filename }</div>
+	<pre class={more_margin: (opts.hdr===undefined) }><code name="display" id="display" class={ language-javascript: lang==='js', language-html: lang==='html' }></code></pre>
 
 	<script>
 		var thisTag = this;
 		var majax = require('marmottajax');
+		var hljs = require('highlight.js');
 		var range = null;
-		thisTag.lang = "markup" || opts.lang;
+		console.log("this.opts.lang",thisTag.opts.lang);
+		thisTag.lang = thisTag.opts.lang || "html";
+
+		console.log("thisTag.lang",thisTag.lang);
 
 		thisTag.on('mount', function(text) {
 			majax({
@@ -24,8 +24,8 @@
 				}
 				thisTag.text = text;
 				thisTag.display.innerText = text;
-				var el = document.getElementById('display');
-		        Prism.highlightElement(thisTag.display);
+				// thisTag.display.innerHTML = text;
+				hljs.highlightBlock(thisTag.display);
 				thisTag.update(this);
 			})
 		});
@@ -33,15 +33,26 @@
 	</script>
 
 	<style scoped>
-	h1 {
+	div.header {
 		font-size:12px;
 		font-weight: normal;
-		margin:0;
-		padding:0;
+		background-color: #aaa;
+		color: #fff;
+		padding-left:20px;
+		margin-top: 10px;
+		margin-bottom:0;
+		padding-bottom: 0;
 	}
-	pre, code {
+	pre {
 		margin:0;
-		padding:0;
+		margin-bottom: 20px;
 	}
+	#display {
+		background-color: #f5f2f0;
+	}
+	.more_margin {
+		margin-top: 10px 0 20px 0;
+	}
+
 	</style>
 </code-display>

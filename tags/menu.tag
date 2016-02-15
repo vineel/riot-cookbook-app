@@ -26,11 +26,11 @@
 			["A Simple Tag", "simple-page", false],
 			["A Boilerplate Tag", "boilerplate-page", false],
 			["Routing", "routing-page", false],
-			["Rendering Tables", "rendering-tables-page",false],
+			["Tables", "rendering-tables-page",false],
 			["Ajax Table", "ajax-page", false],
-			["Clicking", "interactive-page", false],
+			["Clicking", "click-page", false],
 			["Dynamic CSS", "interactive-page", false],
-			["ummm...", "interactive-page", false],
+			["Forms", "forms-page", false],
 			["Message Passing", "message-page", false],
 			["Building This App", "building-page", false]
 		];

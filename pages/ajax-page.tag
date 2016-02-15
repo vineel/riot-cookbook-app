@@ -30,7 +30,7 @@
 		<br/>
 		<p>Here's the script that retrieves the data from the server:</p>
 
-		<code-display filename='pages/ajax-page.tag' firstline='53' lastline='74' lang='js'></code-display>
+		<code-display filename='pages/ajax-page.tag' firstline='53' lastline='74' lang='javascript'></code-display>
 
 		<p>
 		We start the Ajax query on the <b>'mount'</b> event. Once the mount event is received, we know that the DOM has been loaded into the page. This removes any race conditions from the code. (Bad Race Condition: we get the data, but the DOM hasn't been loaded, so rendering the table fails.)
@@ -40,11 +40,11 @@
 
 		<p>In the callback, we parse the JSON textual data into normal javascript data. We also assign this data to a property of the Tag instance:</p>
 
-		<code-embed content="thisTag.rows = JSON.parse(json);"></code-embed>
+		<code-embed content="thisTag.rows = JSON.parse(json);" lang='html'></code-embed>
 
 		<p>This makes the <b>rows</b> property accessible from the markup. Finally, we call <b>update()</b> on the tag instance to tell it to redraw itself, rendering the table with data.</p> 
 
-		<code-embed content="thisTag.update();"></code-embed>
+		<code-embed content="thisTag.update();" language="javascript"></code-embed>
 		<br>
 		<p>The HTML markup is pretty much the same as it was on the <a href="/#/pages/rendering-tables-page">Rendering Tables</a> page.</p>
 

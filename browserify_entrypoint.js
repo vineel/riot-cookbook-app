@@ -3,6 +3,7 @@ var majax = require('marmottajax');
 
 // 3-rd party
 require('prismjs');
+require('highlight.js')
 
 // app.tag shows the menu and sets up routing for each page
 require('./tags/app.tag');
@@ -22,6 +23,8 @@ require('./pages/raw-page.tag');
 require('./pages/rendering-tables-page.tag');
 require('./pages/ajax-page.tag');
 require('./pages/interactive-page.tag');
+require('./pages/click-page.tag');
+require('./pages/building-page.tag');
 
 // These are example tags. View each file for more information.
 require('./tags/simple.tag');
@@ -32,5 +35,6 @@ require('./tags/raw.tag');
 require('./tags/menu.tag');
 require('./tags/code-display.tag');
 require('./tags/code-embed.tag');
+require('./tags/code-jsfrag.tag');
 
 riot.mount('*');

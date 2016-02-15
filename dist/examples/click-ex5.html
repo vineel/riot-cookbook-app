@@ -1,0 +1,9 @@
+<a data-argument="1" onclick={ handleAction }>Action 1</a><br>
+<a data-argument="2" onclick={ handleAction }>Action 2</a>
+
+<script>
+	handleAction(event) {
+		var param = event.target.attributes['data-argument'].value;
+		alert("param was: " + param);
+	}
+</script>
