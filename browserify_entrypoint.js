@@ -26,6 +26,7 @@ require('./pages/interactive-page.tag');
 require('./pages/click-page.tag');
 require('./pages/building-page.tag');
 require('./pages/getdom-page.tag');
+require('./pages/between-page.tag');
 
 // These are example tags. View each file for more information.
 require('./tags/simple.tag');
@@ -37,5 +38,6 @@ require('./tags/menu.tag');
 require('./tags/code-display.tag');
 require('./tags/code-embed.tag');
 require('./tags/code-jsfrag.tag');
+require('./tags/receiver.tag');
 
 riot.mount('*');

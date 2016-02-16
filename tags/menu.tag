@@ -32,7 +32,7 @@
 			["Ajax Table", "ajax-page", false],
 			["Clicking", "click-page", false],
 			["Accessing DOM", "getdom-page", false],
-			["Between Tags", "message-page", false],
+			["Between Tags", "between-page", false],
 			["Building This App", "building-page", false]
 		];
 
