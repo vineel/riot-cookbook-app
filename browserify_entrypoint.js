@@ -1,9 +1,11 @@
-var riot = require('riot');
-var majax = require('marmottajax');
+// setting riot global so riotgear can see it
+window.riot=require('riot');
+require('marmottajax');
 
 // 3-rd party
 require('prismjs');
-require('highlight.js')
+require('highlight.js');
+require('riotgear');
 
 // app.tag shows the menu and sets up routing for each page
 require('./tags/app.tag');
