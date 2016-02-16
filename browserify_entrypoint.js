@@ -38,6 +38,7 @@ require('./tags/menu.tag');
 require('./tags/code-display.tag');
 require('./tags/code-embed.tag');
 require('./tags/code-jsfrag.tag');
-require('./tags/receiver.tag');
+require('./tags/traffic-light-direct.tag');
+require('./tags/traffic-light-notify.tag');
 
 riot.mount('*');
