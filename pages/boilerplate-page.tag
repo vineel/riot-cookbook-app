@@ -4,7 +4,7 @@
 		Sometimes I use a boilerplate to get a new tag started.
 		</p>
 		<p>My boilerplate looks like this:</p>
-		<code-display filename="/tags/boilerplate.tag"></code-display>
+		<code-display filename="/examples/boilerplate.tag"></code-display>
 		</p>
 
 		<p>

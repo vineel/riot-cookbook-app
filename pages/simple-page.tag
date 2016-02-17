@@ -5,7 +5,7 @@
 	<p>
 		A tag can be very simple. For example, here's a custom riot tag called "simple".
 	</p>
-	<code-display filename="/tags/simple.tag"></code-display>
+	<code-display filename="/examples/simple.tag"></code-display>
 
 	<p>
 		There are a few things to notice about this tag:

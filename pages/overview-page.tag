@@ -2,7 +2,7 @@
 	<div>
 		<p><a href="http://riotjs.com">Riot</a> is a great open-source front-end framework for creating single-page web apps using Javascript. <a href="http://riotjs.com">riotjs.com</a> has good reference materials and guides for learning how to develop with Riot.</p> 
 		
-		<p>I have been working with Riot for the last couple of months, and really enjoying the experience. However, I felt that more examples would have accelerated my climb up the learning curve. This app is my attempt at contributing to the Riot community. Instead of writing an ebook, I combined explanation with working examples into this working app.</p>
+		<p>I have been working with Riot for the last couple of months, and really enjoying the experience. However, I felt that more examples would have accelerated my climb up the learning curve. This app is my attempt to contribute to the Riot community. Instead of writing an ebook, I combined explanation with working examples into this working app.</p>
 
 		<p>The code for this app is available at <a href="http://github.com/vineel/riot-cookbook-app">http://github.com/vineel/riot-cookbook-app</a>. I encourage you to grab the repo, run the app locally, and read the code.</p>
 

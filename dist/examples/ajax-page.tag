@@ -30,7 +30,7 @@
 		<br/>
 		<p>Here's the script that retrieves the data from the server:</p>
 
-		<code-display filename='/examples/ajax-page.tag' firstline='53' lastline='74' lang='javascript'></code-display>
+		<code-display filename='pages/ajax-page.tag' firstline='53' lastline='74' lang='javascript'></code-display>
 
 		<p>
 		We start the Ajax query on the <b>'mount'</b> event. Once the mount event is received, we know that the DOM has been loaded into the page. This removes any race conditions from the code. (Bad Race Condition: we get the data, but the DOM hasn't been loaded, so rendering the table fails.)
@@ -48,7 +48,7 @@
 		<br>
 		<p>The HTML markup is pretty much the same as it was on the <a href="/#/pages/rendering-tables-page">Rendering Tables</a> page.</p>
 
-		<code-display filename='/examples/ajax-page.tag' firstline='8' lastline='28'>/code-display>
+		<code-display filename='pages/ajax-page.tag' firstline='8' lastline='28'>/code-display>
 	</div>
 
 	<script>

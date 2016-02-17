@@ -3,7 +3,7 @@
 <p each={choice,index in choices} class={ selected: choice[2] } onclick={ clickChoice }><a onclick={ clickChoice }>{ choice[0] }</a></p>
 <br/>
 
-<a href="http://github.com/vineel/riot-cookbook-app/blob/master/pages/{ chosenTagName }.tag" target="source_view">View Source</a>
+<p><a href="http://github.com/vineel/riot-cookbook-app/blob/master/pages/{ chosenTagName }.tag" target="source_view">View Page Source</a></p>
 
 </div>
 
@@ -33,7 +33,7 @@
 			["Clicking", "click-page", false],
 			["Accessing DOM", "getdom-page", false],
 			["Between Tags", "between-page", false],
-			["Building This App", "building-page", false]
+			["Build & Run", "building-page", false]
 		];
 
 		thisTag.selectByIndex = function(index) {
@@ -77,7 +77,8 @@
 		top:10px;
 		left:20px;
 		display: table-cell;
-		cursor: pointer
+		cursor: pointer;
+		text-decoration: none;
 	}
 
 	p.selected {
