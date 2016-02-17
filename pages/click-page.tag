@@ -29,15 +29,15 @@
 	The data is defined in the script as JSON:
 	</p>
 
-	<code-display filename="/examples/click-ex3.js" language="javascript"></code-display>
+	<code-display filename="examples/click-ex3.js" language="javascript"></code-display>
 
 	<p>The HTML is rendered with the following markup.</p>
 
-	<code-display filename="/examples/click-ex2.html" lang="html"></code-display>
+	<code-display filename="examples/click-ex2.html" lang="html"></code-display>
 
 	<p>The javascript that handles both clicks looks like this:</p>
 
-	<code-display filename="/examples/click-ex4.js" lang="javascript"></code-display>
+	<code-display filename="examples/click-ex4.js" lang="javascript"></code-display>
 
 	<p>The MouseEvent handler <b>event</b> has a property, <b>item</b>, which contains the iteration variable. So... <b>event.item.name.FIRST</b> refers to the first name being rendered or clicked on.</p>
 
@@ -53,7 +53,7 @@
 	</p>
 	<p>You can use a custom attribute in the tag that has the onclick handler. Here, we're using a custom attribute called <b>data-argument</b>.</p>
 
-	<code-display filename='/examples/click-ex5.html' lang='html'></code-display>
+	<code-display filename='examples/click-ex5.html' lang='html'></code-display>
 
 	<h3>Workaround 2: Using bind in the event handler.</h3>
 
@@ -63,7 +63,7 @@
 	</p>
 	<p>Here, we bind the call to the function with a parameter value. This parameter is passed to the function instead of the normal MouseEvent.</p>
 
-	<code-display filename='/examples/click-ex6.html' lang='html'></code-display>
+	<code-display filename='examples/click-ex6.html' lang='html'></code-display>
 
 
 	<br>

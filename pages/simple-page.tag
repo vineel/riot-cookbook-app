@@ -5,14 +5,14 @@
 	<p>
 		A tag can be very simple. For example, here's a custom riot tag called "simple".
 	</p>
-	<code-display filename="/examples/simple.tag"></code-display>
+	<code-display filename="examples/simple.tag"></code-display>
 
 	<p>
 		There are a few things to notice about this tag:
 		<ol>
 		<li>The name of the tag is <b>simple</b>.</li>
 		<li>You can embed this tag in another tag like this:
-		<code-display filename="/examples/simple-ex1.html" lang='html'></code-embed>
+		<code-display filename="examples/simple-ex1.html" lang='html'></code-embed>
 		<li>There is no javascript or CSS in this tag. It is legal to have a markup-only or script-only tag.
 		<li>Typically, this tag would be saved in a file called <b>simple.tag</b>.</li>
 		</ol>

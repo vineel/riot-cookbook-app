@@ -2,7 +2,7 @@
 	<h2 style="margin:0;padding:0">Rendering Tables</h2>
 	The following HTML Tables are rendered dynamically using this data:
 
-	<code-display filename="/examples/rendering-tables-page.tag" firstline='77' lastline='103'></code-display>
+	<code-display filename="examples/rendering-tables-page.tag" firstline='77' lastline='103'></code-display>
 
 	<h2>Simple Table: 1 display row for 1 data row.</h2>
 	<table class="simple">
@@ -28,7 +28,7 @@
 
 	<p>Here's the code that renders the table:</p>
 
-	<code-display filename="/examples/rendering-tables-page.tag" firstline='7' lastline='27'></code-display>
+	<code-display filename="examples/rendering-tables-page.tag" firstline='7' lastline='27'></code-display>
 
 	<p>The important bit is...</p>
 
@@ -52,11 +52,11 @@
 	</table>
 	<p>This table works almost exactly like the previous one. The difference is that it has <b>TWO TR tags</b> for each item in the array. It looks like this:
 
-	<code-display filename="/examples/rendering-tables-page.tag" firstline='44' lastline='50'></code-display>
+	<code-display filename="examples/rendering-tables-page.tag" firstline='44' lastline='50'></code-display>
 
 	<p>You can't put the loop on either of the <b>TR</b> tags. So what do you do? Use the <b>TBODY</b> tag!</p>
 
-	<code-display filename="/examples/rendering-tables-page.tag" firstline='43' lastline='51'></code-display>
+	<code-display filename="examples/rendering-tables-page.tag" firstline='43' lastline='51'></code-display>
 
 	<p>A <b>TBODY</b> tag is used to group the body content in an HTML table. So when you add the <b>each</b> loop to the TBODY tag, you're telling riot to repeat both the TR's for each iteration of the loop, which is exactly what you want to do!</p>
 
@@ -69,7 +69,7 @@
 
 	<p>We are telling Riot to call the <b>rowClick</b> function, which is defined in the script tag.</p>
 
-	<code-display filename="/examples/rendering-tables-page.tag" firstline='104' lastline='109' lang="js"></code-display>
+	<code-display filename="examples/rendering-tables-page.tag" firstline='104' lastline='109' lang="js"></code-display>
 
 	<p>You might notice this is a special syntax, too. The event parameter is a "MouseEvent" object. It has a magic property called <b>item</b> that represents the iteration of the loop, so you can access the loop variables in the function. For example, <b>event.item.row.FIRST</b> refers to the "FIRST" property of the object that was clicked. <b>event.item.index</b> refers to the index of the object in the array. For more info about event handler, go to <a href="http://riotjs.com/guide/#event-handlers">riotjs.com</a></p>
 

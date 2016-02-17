@@ -17,7 +17,7 @@
 	</div>
 </div>
 <br>
-<code-display filename="/examples/getdom-ex1.html"></code-display>
+<code-display filename="examples/getdom-ex1.html"></code-display>
 
 <h3>Access a DOM element by ID or Name attributes</h3>
 

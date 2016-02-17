@@ -23,7 +23,7 @@
 		</div>
 		<h3>How to install and this app:</h3>
 		<p>First make sure you have <a href="https://git-scm.com/downloads">git</a> and <a href="http://nodejs.org">node</a> and npm.</p>
-		<code-display filename="/examples/build-ex1.html" lang="html"></code-display>
+		<code-display filename="examples/build-ex1.html" lang="html"></code-display>
 	</div>
 
 </building-page>

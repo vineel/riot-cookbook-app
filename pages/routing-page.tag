@@ -58,7 +58,7 @@ This process is called <b>routing</b>.
 
 <p>The app tag contains the <b>menu tag</b> and a div with the id <b>content</b>. </p>
 
-<code-display filename="/examples/app.tag" firstline='1' lastline='10' lang="html"></code-display>
+<code-display filename="examples/app.tag" firstline='1' lastline='10' lang="html"></code-display>
 
 <p>The user clicks on a menu button such as <b>Routing</b>. That calls on riot's <b>router</b> to change the URL.</p>
 
@@ -68,7 +68,7 @@ This process is called <b>routing</b>.
 
 <p>The <b>app tag</b> contains javascript code that reacts to changes in the URL.</p>
 
-<code-display filename="/examples/app.tag" firstline='29' lastline='39' lang='javascript'></code-display>
+<code-display filename="examples/app.tag" firstline='29' lastline='39' lang='javascript'></code-display>
 
 <p>
 	First, we tell riot to add a URL pattern to the <b>router</b> object that will capture any URL that starts with <b>/pages/</b>. 
@@ -116,7 +116,7 @@ Every website has a "default" URL, that contains just the hostname. For example:
 One way to deal with this is to capture this URL and redirect the user to a different route.
 </p>
 
-<code-display filename="/examples/app.tag" firstline='25' lastline='29' lang='javascript'></code-display>
+<code-display filename="examples/app.tag" firstline='25' lastline='29' lang='javascript'></code-display>
 
 <p>
 This new route captures the default URL, and redirects the user to the overview page.

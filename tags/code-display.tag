@@ -1,6 +1,4 @@
-<code-display>
-	<div class='header' if={ opts.hdr!=undefined }>Filename: { opts.filename }</div>
-	<pre class={more_margin: (opts.hdr===undefined) }><code name="display" id="display" class="language-{ lang }"></code></pre>
+<code-display><div class='header' if={ opts.hdr!=undefined }>Filename: { opts.filename }</div><pre class={more_margin: (opts.hdr===undefined) }><code name="display" id="display" class="language-{ lang }"></code></pre>
 
 	<script>
 		var thisTag = this;
@@ -45,6 +43,7 @@
 	pre {
 		margin:0;
 		margin-bottom: 20px;
+		background-color: #f5f2f0;
 	}
 	#display {
 		background-color: #f5f2f0;

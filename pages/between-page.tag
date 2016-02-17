@@ -22,23 +22,23 @@
 			<li>Each has a <b>Next</b> button, which calls the local event handler <b>nextLight1</b></li>
 			<li>The event handler finds the correct tag instance based on the ID, and calls the tag's <b>next()</b> method directly on it.<br>
 			<B>Markup</B>
-			<code-display filename='/examples/between-ex1.html' lang='html'></code-display>
+			<code-display filename='examples/between-ex1.html' lang='html'></code-display>
 
 			<b>Code</b>
-			<code-display filename='/examples/between-ex2.js' lang='javascript'></code-display>		
+			<code-display filename='examples/between-ex2.js' lang='javascript'></code-display>		
 			</li>
 
 			<li>The <b>traffic-light-direct</b> tag, of course, exposes its <b>next</b> method.
-			<code-display filename='/examples/between-ex3.js' lang='html'></code-display></li>
+			<code-display filename='examples/between-ex3.js' lang='html'></code-display></li>
 
 
 			<li>There is also a <b>Call Next on All</b> link, which calls the <b>nextOnAll</b> handler.</li>
 
 			<B>Markup</B>
-			<code-display filename='/examples/between-ex3.html' lang='html'></code-display>
+			<code-display filename='examples/between-ex3.html' lang='html'></code-display>
 
 			<b>Code</b>
-			<code-display filename='/examples/between-ex4.js' lang='javascript'></code-display>		
+			<code-display filename='examples/between-ex4.js' lang='javascript'></code-display>		
 			</li>
 
 
@@ -63,7 +63,7 @@
 			<li>In the <b>between-page</b> tag, we define an object called <b>notificationCenter</b>.
 			<ul><li>It uses <a href="http://riotjs.com/api/observable/">riot's observable()</a> system to send messages throughout the app.</li>
 			<li>We also use <a href="http://riotjs.com/guide/#mixins">riot's mixin</a> system to share this object throughout the app.
-			<code-display filename='/examples/between-ex6.js' lang='javascript'></code-display>	
+			<code-display filename='examples/between-ex6.js' lang='javascript'></code-display>	
 
 			</li>
 			</ul></li>
@@ -73,23 +73,23 @@
 			<li>Each has a <b>Next</b> button, which calls the local event handler <b>nextLight2</b></li>
 			<li>The event handler uses <b>notificationCenter</b> to send a message called 'next_light_state' with the traffic tag ID as a parameter.<br>
 			<B>Markup</B>
-			<code-display filename='/examples/between-ex8.html' lang='html'></code-display>
+			<code-display filename='examples/between-ex8.html' lang='html'></code-display>
 
 			<b>Code</b>
-			<code-display filename='/examples/between-ex9.js' lang='javascript'></code-display>		
+			<code-display filename='examples/between-ex9.js' lang='javascript'></code-display>		
 			</li>
 
 			<li>The <b>traffic-light-notify</b> tag has grabbed access to the notificationCenter and registered a listener for the 'next_light_state' message. If there is a tagId sent, it will make sure it has the correct ID before executing.
-			<code-display filename='/examples/between-ex10.js' language='javascript'></code-display>
+			<code-display filename='examples/between-ex10.js' language='javascript'></code-display>
 			</li>
 
 			<li>There is also a <b>Call Next on All</b> link, which calls the <b>nextOnAll2</b> handler. This handler simply sends the 'next_light_state' message to all listeners, without restricting to a certain tag ID.</li>
 
 			<B>Markup</B>
-			<code-display filename='/examples/between-ex11.html' lang='html'></code-display>
+			<code-display filename='examples/between-ex11.html' lang='html'></code-display>
 
 			<b>Code</b>
-			<code-display filename='/examples/between-ex12.js' lang='javascript'></code-display>			
+			<code-display filename='examples/between-ex12.js' lang='javascript'></code-display>			
 
 			</li>
 
