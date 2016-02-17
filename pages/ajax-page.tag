@@ -82,11 +82,6 @@
 			background-color: #eee;
 		}
 
-		table.simple tr:hover {
-			background-color: #EE0;
-			cursor:pointer;
-		}
-
 	</style>
 
 </ajax-page>

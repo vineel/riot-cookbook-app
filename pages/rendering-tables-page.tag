@@ -125,7 +125,7 @@
 	}
 
 	table.simple tr:hover {
-		background-color: #EE0;
+		background-color: #8888FF;
 		cursor:pointer;
 	}
 
@@ -143,7 +143,7 @@
 		background-color: #eee;
 	}
 	table.complex tbody:hover {
-		background-color: #EE0;
+		background-color: #8888FF;
 		cursor:pointer;
 	}
 
