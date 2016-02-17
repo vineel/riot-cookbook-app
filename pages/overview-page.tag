@@ -12,6 +12,8 @@
 
 		<p>I have no association with the people that wrote Riot. I'm simply a fan and a developer who uses Riot in my work.</p>
 
+		<p>If you have any comments or questions about this repo, please use Github's Issue function on this repo.</p>
+
 		<p><a href="http://vineel.com">Vineel Shah</a><br>
 		Feb 2017</p>
 	</div>
