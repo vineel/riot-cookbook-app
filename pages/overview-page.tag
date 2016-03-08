@@ -15,7 +15,7 @@
 		<p>If you have any comments or questions about this repo, please use Github's Issue function on this repo.</p>
 
 		<p><a href="http://vineel.com">Vineel Shah</a><br>
-		Feb 2017</p>
+		Feb 2016</p>
 	</div>
 
 </overview-page>
